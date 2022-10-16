@@ -1,8 +1,10 @@
+import AboutUsbanner from "../components/AboutUsBanner";
+
 const AboutUs = () => {
 	return (
 		<div>
-			<h1>AboutUs</h1>
-			<div>Lorem ipsum dolor sit amet</div>
+			<AboutUsbanner />
+			<div></div>
 		</div>
 	);
 };
