@@ -8,7 +8,7 @@ const Home = () => {
 	return (
 		<div>
 			<Banner />
-			<LodgingCard />
+			
 			<div className="cards__container">
 				{ Datas.map((accomodation) =>
 				<div className="card__accomodation">

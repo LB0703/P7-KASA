@@ -1,3 +1,4 @@
+import React from "react";
 import bannerAboutUs from '../images/bannerAboutUs.png';
 
 const AboutUs = () => {
