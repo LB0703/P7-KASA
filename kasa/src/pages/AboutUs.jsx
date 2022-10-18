@@ -1,4 +1,5 @@
-import AboutUsbanner from "../components/AboutUsBanner";
+import AboutUsbanner from "../components/AboutUsBanner.jsx";
+import'../scss/AboutUsBanner.scss'
 
 const AboutUs = () => {
 	return (
