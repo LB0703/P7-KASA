@@ -8,24 +8,26 @@ const Home = () => {
 	return (
 		<div>
 			<Banner />
-		
 			<div className="card__container">
-				{ Datas.map((accomodation) =>
-				
+				{ Datas.map((accomodation) => 
 					<Link key={`${accomodation.id}`} to= {`/accomodation/${accomodation.id}`}>
 						<Gallery 
 							key={`accomodation.id`}
 							cover={accomodation.cover}
 							title={accomodation.title}
+							
 						/>
+						
 					</Link>
-
+					
 				)}
-
+				
 			</div>
 			
 		</div>
+		
 	);
+	
 };
 
 export default Home;

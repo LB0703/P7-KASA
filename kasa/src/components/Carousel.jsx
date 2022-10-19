@@ -1,16 +1,19 @@
 import React from "react";
-
-//import CarouselBanner from '../images/Carouselfichelogement.png'
-import Lodging from "../pages/Lodging";
+import arrowLeft from "../images/arrowLeft.png";
+import arrowRight from "../images/arrowRight.png"
+import CarouselBanner from '../images/CarouselBanner.png';
 import '../scss/Carousel.scss'
 
 
 
 const Carousel = () => {
 	return (
-		<div>
-                  <Lodging />
-                  <h1>Carousel</h1>
+		<div className="carousel__container">
+                  <img className="carouselArrowLeft"src={arrowLeft} alt="Flèche gauche" />
+                  <img className="CarouselBanner"src={CarouselBanner} alt="Photos du logement" />
+                  <img className="carouselArrowRight"src={arrowRight} alt="Flèche droite" />
+            
+                  
             </div>
 	);
 };
