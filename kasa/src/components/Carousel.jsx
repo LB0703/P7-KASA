@@ -2,7 +2,7 @@ import React from "react";
 import arrowLeft from "../images/arrowLeft.png";
 import arrowRight from "../images/arrowRight.png"
 import CarouselBanner from '../images/CarouselBanner.png';
-import '../scss/Carousel.scss'
+import '../scss/components/_carousel.scss'
 
 
 

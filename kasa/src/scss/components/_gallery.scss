@@ -1,19 +1,20 @@
-.card {
+.card {  
+      
       &__accomodation {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-items: center;
-            padding: 32px 16px;
+           
+            
+            //padding: 32px 16px;
             border-radius: 10px;
-            max-width: 1240px;
+            
       }
       &__item{
-            max-width: 340px;
+            display: inline-block;
+            
+            margin: 70px;
+            width: 340px;
             height: 340px;
             position: relative;
-            margin: 20px
+            
       }
       &__img {
             width: 100%;
@@ -32,6 +33,7 @@
             color: #ffffff;
       }
       &__container {
+           
             width: 90%;
             background-color: #F7F7F7;
             border-radius: 15px ;
@@ -39,4 +41,6 @@
             margin-right: 100px;
             justify-items: center;
       }
+    
+
 }

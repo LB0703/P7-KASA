@@ -1,6 +1,6 @@
 
 import React from "react";
-import'../scss/Gallery.scss'
+import'../scss/components/_gallery.scss'
 
 const Card = ({cover, title}) => {
 	return (
