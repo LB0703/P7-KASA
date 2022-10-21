@@ -1,0 +1,27 @@
+
+
+.collapse {
+      display: block;
+      max-width: 1023px;
+      margin: auto;
+      background-color: orange;
+
+      &__title {
+            font-size: 30px;
+            //background: $color-primary;
+            position: relative;
+      }
+      &__arrow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            color: black;
+            cursor: pointer;
+            width: 10%;
+            height: 47px;
+            border-radius: 5px;
+            margin-bottom: 32px;
+            padding: 0 16px;
+      }
+}

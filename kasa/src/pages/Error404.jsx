@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink} from 'react-router-dom';
 //import "../scss/pages/_error404.scss";
-//import "../scss/utils/_variables.scss";
+import "../scss/utils/_variables.scss";
 
 
 const Error404 = () => {

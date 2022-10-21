@@ -8,6 +8,7 @@ import Lodging from "./pages/Lodging";
 import Error404 from "./pages/Error404";
 
 
+
 const App = () => {
 	return (
 		<BrowserRouter>

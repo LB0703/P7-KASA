@@ -1,36 +1,35 @@
-// import React from "react";
+import React, { useState} from "react";
+import'../scss/components/_collapse.scss'
 
-// //import arrowTop from "../images/arrowTop.png"
-// //import arrowBottom from "../images/arrowBottom.png"
-// //import { getLodgingById } from "../api";
+import arrowTop from "../images/arrowTop.png"
+import arrowBottom from "../images/arrowBottom.png"
 
-// const Collapse = () => {
-//       const title = title;
-//       const content = content;
-//       //const Data = getLodgingById()
 
-//       return title.map((item) =>
-//       <h1 key={item.id}>{item.title} {item.content}</h1>
-//       )
-// };
+const Collapse = (props) => {
 
-// export default Collapse
+      const [up, setUp ] = useState(false)
 
-import React from "react";
+      const arrow = () => {
+            setUp(!up);
+      };
 
-//import arrowTop from "../images/arrowTop.png"
-//import arrowBottom from "../images/arrowBottom.png"
-//import { getLodgingById } from "../api";
 
-const Collapse = () => {
-     // const title = title;
-     // const content = content;
-      //const Data = getLodgingById()
-
-      return () =>
-      <div>
-      <h1>gggggggg</h1>
-      </div>
+      return ( 
+      <div className="collapse__container">
+            <div className="collapse__containerBtn" onClick={arrow}>
+                  <div className="collapse__btn">
+                        <p className="collapse__title">{props.title}</p>{''}
+                  </div>
+                  {up ? (
+                        <img className="collapse__arrow" src={arrowTop} alt="Flèche direction haut" />
+                  ) : (
+                        <img className="collapse__arrow" src={arrowBottom} alt="Flèche direction bas" />
+                  )}
+            </div>
+      
+            {up && <div className="collapse__content"> {props.content} </div>}
+            </div>
+      ) 
 };
 
 export default Collapse;
