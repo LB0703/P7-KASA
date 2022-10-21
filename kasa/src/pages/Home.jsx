@@ -28,7 +28,7 @@ const Home = () => {
 			<Banner />
 			<div className="card__container">
 				{ data.map((lodging) =>
-					<Link className="card" key={`${lodging.id}`} to= {`/lodging/${lodging.id}`}>
+					<Link className="card" key={`${lodging.id}`} to= {`/accomodation/${lodging.id}`}>
 						<Gallery 
 							key={`lodging.id`}
 							cover={lodging.cover}

@@ -15,3 +15,22 @@
 // };
 
 // export default Collapse
+
+import React from "react";
+
+//import arrowTop from "../images/arrowTop.png"
+//import arrowBottom from "../images/arrowBottom.png"
+//import { getLodgingById } from "../api";
+
+const Collapse = () => {
+     // const title = title;
+     // const content = content;
+      //const Data = getLodgingById()
+
+      return () =>
+      <div>
+      <h1>gggggggg</h1>
+      </div>
+};
+
+export default Collapse;

@@ -5,17 +5,19 @@ import { getAboutUs } from "../api";
 import Collapse from "../components/Collapse.jsx"
 
 const AboutUs = () => {
-	const Data = getAboutUs ();
+	const data = getAboutUs ();
 	return (
 		<div>
 			<AboutUsbanner />
-			<Collapse />
-			<div className="aboutUs__collapse">
-				{ Data.map((item) => 
-					<Collapse key={item.id} title={item.title} content={item.content} />
-				)}
+			 <div className="aboutUs__collapse">
+				{ data.map((item, index) => (
+					<Collapse 
+					key={index} 
+					title={item.title} 
+					content={item.content} />
+					))}
 
-			</div>
+			</div> 
 			
 		</div> 
 	);
