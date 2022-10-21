@@ -1,17 +1,27 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner"
 import Gallery from "../components/Gallery";
 import "../scss/components/_gallery.scss"
 import { getLodgings } from "../api";
-import { getLodgingById } from "../api";
-import { getAboutUs } from "../api";
+//import { getLodgingById } from "../api";
+//import { getAboutUs } from "../api";
 
 const Home = () => {
+	//const [dataLodging, setDataLodging] = useState ([]);
+	// [ error404, setError404] = useState(false);
+
 	const data = getLodgings();
 
-	console.log(getLodgingById('toto'));
-	console.log(getLodgingById('c67ab8a7'));
-	console.log(getAboutUs());
+	//useEffect(() =>{
+	//	getLodgings();
+
+	//},[])
+
+	//if(error404) {return("error")}
+	//console.log(getLodgingById('toto'));
+	//.log(getLodgingById('c67ab8a7'));
+	//console.log(getAboutUs());
 
 	return (
 		<div>

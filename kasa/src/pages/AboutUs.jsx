@@ -1,3 +1,4 @@
+import React from "react";
 import AboutUsbanner from "../components/AboutUsBanner.jsx";
 import'../scss/components/_aboutUsBanner.scss'
 import { getAboutUs } from "../api";
@@ -10,8 +11,8 @@ const AboutUs = () => {
 			<AboutUsbanner />
 			<Collapse />
 			<div className="aboutUs__collapse">
-				{ Data.map((item, index) => 
-					<Collapse key={index} title={this.state.item.title} content={this.state.item.content} />
+				{ Data.map((item) => 
+					<Collapse key={item.id} title={item.title} content={item.content} />
 				)}
 
 			</div>

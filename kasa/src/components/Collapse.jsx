@@ -1,13 +1,17 @@
-import React from "react";
-import { useState } from "react";
-//import arrowTop from "../images/arrowTop.png"
-//import arrowBottom from "../images/arrowBottom.png"
+// import React from "react";
 
-const collapse = (props) => {
-     const title = props.title;
-      const content = props.content;
+// //import arrowTop from "../images/arrowTop.png"
+// //import arrowBottom from "../images/arrowBottom.png"
+// //import { getLodgingById } from "../api";
 
-return this.props.title.map((index)
-<h1>{index.title} {index.content}</h1>
-)
-};
+// const Collapse = () => {
+//       const title = title;
+//       const content = content;
+//       //const Data = getLodgingById()
+
+//       return title.map((item) =>
+//       <h1 key={item.id}>{item.title} {item.content}</h1>
+//       )
+// };
+
+// export default Collapse
