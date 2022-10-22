@@ -1,17 +1,23 @@
-//import {useState} from "react";
+import {useEffect, useState} from "react";
 //import { useParams } from "react-router-dom";
-import Carousel from "../components/Carousel"
-import "../scss/components/_carousel.scss"
+import Carousel from "../components/Carousel";
+import "../scss/components/_carousel.scss";
+import { getLodgingById } from "../api"; 
 
 
-
+const dataLodging = getLodgingById();
 
 const Lodging = () => {
+	
+
 	//const { id } = useParams();
-	//const [Lodging, setLodging] = useState();
+	const [{ getLodgingById }, setGetLodgingById  ] = useState([]);
 
 	
-		
+		useEffect (() => {  
+			setGetLodgingById({ getLodgingById });
+
+	}, [ getLodgingById ] );
 	
 	return (
 		<div>
@@ -20,9 +26,14 @@ const Lodging = () => {
 			<section className="lodging__data">
 
 			<div className="lodging__detail">
-				<h1>{Lodging.title}</h1>
-				<p>{Lodging.location}</p>
-				{/* <Tags tags={Lodging.tags} /> */}
+				{ dataLodging.map((lod) =>
+				key={lod.id}
+				title={lod.title}
+				location={lod.location}
+				
+				
+				)}
+				
 			</div>
 		
 			</section>
