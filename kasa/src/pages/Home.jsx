@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner"
 import Gallery from "../components/Gallery";
-import "../scss/components/_gallery.scss"
+//import "../styles/components/_gallery.scss"
 import { getLodgings } from "../api";
-import "../scss/utils/_variables.scss";
+//import "../styles/utils/_variables.scss";
 //import { getLodgingById } from "../api";
 //import { getAboutUs } from "../api";
 

@@ -1,10 +1,10 @@
 import React from "react";
 import AboutUsbanner from "../components/AboutUsBanner.jsx";
-import'../scss/components/_aboutUsBanner.scss'
-import'../scss/components/_collapse.scss'
+//import'../styles/components/_aboutUsBanner.scss'
+//import'../styles/components/_collapse.scss'
 import { getAboutUs } from "../api";
 import Collapse from "../components/Collapse.jsx"
-import "../scss/utils/_variables.scss";
+//import "../styles/utils/_variables.scss";
 
 
 const AboutUs = () => {

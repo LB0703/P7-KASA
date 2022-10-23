@@ -7,9 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import Lodging from "./pages/Lodging";
 import Error404 from "./pages/Error404";
 
-
-
-const App = () => {
+function App() {
 	return (
 		<BrowserRouter>
 			<Header />
@@ -22,6 +20,6 @@ const App = () => {
 			<Footer />
 		</BrowserRouter>
 	);
-};
+}
 
 export default App;

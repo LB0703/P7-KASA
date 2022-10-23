@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import'../scss/components/_collapse.scss'
+//import'../styles/components/_collapse.scss'
 
 import arrowTop from "../images/arrowTop.png"
 import arrowBottom from "../images/arrowBottom.png"
