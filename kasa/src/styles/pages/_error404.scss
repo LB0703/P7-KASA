@@ -8,7 +8,7 @@
       
             &__number {  
                   
-                  font-family: 'Montserrat';
+                 
                   font-style: normal;
                   font-weight: 700;
                   font-size: 288px;
@@ -17,11 +17,12 @@
                   margin-top: 30px;
             }
             &__text {
-                  font-family: 'Montserrat';
+
                   font-style: normal;
                   font-weight: 500;
                   font-size: 36px;
                   color: $color-primary;
+                  margin-bottom: 159px;
             }
             &__link {
                   font-family: 'Montserrat';
@@ -30,6 +31,24 @@
                   font-size: 18px;
                   text-decoration-line: underline;
                   color: $color-primary;
-                  margin-bottom: 120px;
+                  margin-bottom: 159px;
             }
+}
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 576px) {
+      .error { 
+            &__number {
+                 font-size: 144px;
+            }
+            &__text{ 
+                  font-size: 18px;   
+}
+}
+}
+
+@media (max-width: 576px) {
+      
 }

@@ -12,8 +12,8 @@ const Header = () => {
 				<img className='header__logo'src={logo} alt='logo kasa'></img>
 			
 			<nav className='header__nav'>
-				<NavLink to="/" className="header__Accueil" >Accueil</NavLink>
-				<NavLink to="/about-us" className="header__Apropos">A propos</NavLink>
+				<NavLink to="/" className="header__link" >Accueil</NavLink>
+				<NavLink to="/about-us" className="header__link">A propos</NavLink>
 			</nav>
 			</div>
 		</header>
