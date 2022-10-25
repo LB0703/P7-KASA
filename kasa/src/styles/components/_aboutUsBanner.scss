@@ -1,31 +1,20 @@
-.AboutUs {
+.aboutUsbanner {
 
-      &__container {
-            position:relative;  
+     &__container{
             display: flex;
-            height: 223px;
+            justify-content: center;
+            margin-bottom: 50px;
             margin-left: 100px;
             margin-right: 100px;
-            
+
       }
+            
+
       &__img {
             width: 100%;
             border-radius: 25px;
             filter: brightness(70%);
             object-fit: cover;
       }
-      &__text {
-            position: absolute;
-            top: 50%;
-            bottom: 50%;
-            left: 0;
-            right: 0;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            color: #FFFFFF;
-            text-align: center;
-            justify-content: center;
-      }
+  
 }

@@ -1,61 +1,39 @@
-// import {useEffect, useState} from "react";
-// //import { useParams } from "react-router-dom";
-// import Carousel from "../components/Carousel";
-// import "../scss/components/_carousel.scss";
-// import { getLodgingById } from "../api"; 
+import {useEffect, useState} from "react";
+//import { useParams } from "react-router-dom";
+import Carousel from "../components/Carousel";
+
+import { getLodgingById } from "../api"; 
+
+const data = getLodgingById();
 
 
-// const dataLodging = getLodgingById();
-
-// const Lodging = () => {
+const Lodging = () => {
 	
+      
 
-// 	//const { id } = useParams();
-// 	const [{ getLodgingById }, setGetLodgingById  ] = useState([]);
+	const [{ getLodgingById }, setGetLodgingById  ] = useState([]);
 
 	
-// 		useEffect (() => {  
-// 			setGetLodgingById({ getLodgingById });
+		useEffect (() => {  
+			setGetLodgingById({ getLodgingById });
 
-// 	}, [ getLodgingById ] );
+	}, [ getLodgingById ] );
 	
-// 	return (
-// 		<div>
+	return (
+		<div>
 			
-// 			<Carousel />
-// 			<section className="lodging__data">
+			<Carousel />
+			<section className="lodging__data">
+				{ data.map((lodgingPage, index) =>
+				<div className="lodging__detail">
+                        key={index}
+				title={lodgingPage.title}
+				location={lodgingPage.location} </div>
+		            )}
+			</section>
+		</div>
+	);
 
-// 			<div className="lodging__detail">
-// 				{ dataLodging.map((lod) =>
-// 				key={lod.id}
-// 				title={lod.title}
-// 				location={lod.location}
-				
-				
-// 				)}
-				
-// 			</div>
-		
-// 			</section>
-// 		</div>
-// 	);
+	};
+export default Lodging;
 
-// 	};
-// export default Lodging;
-
-// useEffect (() => {
-// 	const fetchLodging = () => {
-// 	fetch("../Datas.json", {
-// 		headers: {
-// 			"Content-Type": "application/json",
-// 			Accept: "application/json",
-// 		},
-	
-// 	})
-// .then((response) => response.json()
-// .then(({ setLodging }) => console.log(setLodging))
-// .catch((error) => console.log(error)))
-
-
-// fetchLodging() 
-// 	};

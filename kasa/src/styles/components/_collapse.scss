@@ -1,27 +1,40 @@
-
-
 .collapse {
-      display: block;
-      max-width: 1023px;
-      margin: auto;
-      background-color: orange;
-
+      &__containerBtn {
+            display: flex;
+            justify-content: space-between;
+            background-color: $color-primary;
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-bottom: 30px;
+            }
       &__title {
-            font-size: 30px;
-            //background: $color-primary;
-            position: relative;
+            font-size: 20px;
+            background: $color-primary;
       }
       &__arrow {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: blue;
-            color: black;
+            width: 55px;
+            height: 15px;
             cursor: pointer;
-            width: 10%;
-            height: 47px;
-            border-radius: 5px;
-            margin-bottom: 32px;
             padding: 0 16px;
+      }
+      &__content {
+            background-color: $color-tertiary;
+            color: $color-primary;
+            border-radius: 0px 0px 5px 5px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 60px;
+            margin-left: 200px;
+            margin-right: 200px;
+            padding: 40px 20px;
+            margin-top: -30px;
+            
       }
 }

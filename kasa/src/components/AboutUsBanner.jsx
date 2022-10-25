@@ -1,17 +1,14 @@
 import React from "react";
 import bannerAboutUs from '../images/bannerAboutUs.png';
-//import '../scss/AboutUsbanner.scss'
 
-const AboutUs = () => {
+
+const AboutUsbanner = () => {
 	return (
-		<div className='AboutUs'>
-			<img className='AboutUs__img' src={bannerAboutUs}alt="Paysage de montagne" />
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
+		<div className='aboutUsbanner__container'>
+			<img className='aboutUsbanner__img' src={bannerAboutUs}alt="Paysage de montagne" />
+			
 		</div>
 	);
 };
 
-export default AboutUs;
+export default AboutUsbanner;
