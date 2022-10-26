@@ -11,7 +11,7 @@
       }
       &__img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 25px;
             filter: brightness(70%);
             object-fit: cover;
       }
@@ -34,9 +34,9 @@
       .banner {
 
             &__container {
-                width: 100%;
-         margin: 0;
-         padding: 10px 10px;
+                  width: 100%;
+                  margin: 0;
+                  padding: 10px 50px;
             }
       }
 }
@@ -45,9 +45,13 @@
       .banner {
 
             &__container {
-                width: 100%;
-                margin: 0;
-              
+                  width: 100%;
+                  margin: 0;
+                  padding: 0 50px;
+                  height: 180px;
+            }
+            &__text {
+                  font-size: 35px;
             }
       } 
 }
@@ -56,24 +60,27 @@
       .banner {
 
             &__container {
-                
-                 width: 100%;
-                  margin: 0;
-                  height: 140px;
-
+                  
+                  width: 100%;
+                  margin: 0 ;
+                  height: 111px;
+                  padding: 0 20px;
             }
             &__img {
                   width: 100%;
+                  border-radius: 10px;
             }
             &__text {
-                  
-                  text-align: left;
-                  margin-left: 10px;
-                  font-size: 26px;
+                  flex-wrap: wrap;
+                  text-align: start;
+                  margin-left: 16px;
+                  font-size: 24px;
                   font-weight: 400;
+                  padding-left: 16px;
+                  padding-right: 122px;
+                  line-height: 24px;
+                  top: 30px;
 
-
-                 
             }
       }
 }

@@ -1,6 +1,6 @@
 .aboutUsbanner {
 
-     &__container{
+      &__container{
             display: flex;
             justify-content: center;
             margin-bottom: 50px;
@@ -14,7 +14,81 @@
             width: 100%;
             border-radius: 25px;
             filter: brightness(70%);
-            object-fit: cover;
+            //object-fit: cover;
       }
   
+}
+@media (max-width: 992px) {
+      .banner {
+
+            &__container {
+                  width: 100%;
+                  margin: 0;
+                  padding: 10px 50px;
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .banner {
+
+            &__container {
+                  width: 100%;
+                  margin: 0;
+                  padding: 0 50px;
+                  height: 180px;
+            }
+            &__text {
+                  font-size: 35px;
+            }
+      } 
+}
+
+@media (max-width: 992px) {
+      .aboutUsbanner {
+
+            &__container {
+                  width: 100%;
+                  margin: 0;
+                  padding: 10px 50px;
+                  height: 250px;
+            }
+            &__img {
+                  border-radius: 10px;
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .aboutUsbanner {
+
+            &__container {
+                  width: 100%;
+                  margin: 0;
+                  padding: 0 50px;
+                  height: 180px;
+            }
+           
+           
+      } 
+}
+
+
+@media (max-width: 576px) {
+      .aboutUsbanner {
+
+            &__container {
+                  
+                  width: 100%;
+                  margin: 0 ;
+                  height: 223px;
+                  padding: 0 20px;
+            }
+            &__img {
+                  width: 100%;
+                  border-radius: 10px;
+                  object-fit: cover;
+            }
+       
+      }
 }

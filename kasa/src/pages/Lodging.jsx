@@ -1,39 +1,52 @@
-import {useEffect, useState} from "react";
+//import { useState, useEffect } from "react";
+import React from "react";
 //import { useParams } from "react-router-dom";
+import { getLodgingById } from "../api";
 import Carousel from "../components/Carousel";
+import Tags from "../components/Tags";
+import Host from "../components/Host";
+import Collapse from "../components/Collapse";
+//import Host from "../images/host.png"
 
-import { getLodgingById } from "../api"; 
-
-const data = getLodgingById();
 
 
 const Lodging = () => {
-	
+	const infoLodging = getLodgingById();
       
 
-	const [{ getLodgingById }, setGetLodgingById  ] = useState([]);
+	//const [{ getLodgingById }, setGetLodgingById  ] = useState([]);
 
 	
-		useEffect (() => {  
-			setGetLodgingById({ getLodgingById });
+		//useEffect (() => {  
+		//	setGetLodgingById({ getLodgingById });
 
-	}, [ getLodgingById ] );
-	
+	//}, [ getLodgingById ] );
+	if (infoLodging !== undefined) {
+		const {  pictures, equipments, description} = infoLodging
 	return (
 		<div>
 			
-			<Carousel />
-			<section className="lodging__data">
+			
+			<div>
+				<Carousel pictures={pictures} />
+				
+			</div>
+			{/* <section className="lodging__data">
 				{ data.map((lodgingPage, index) =>
 				<div className="lodging__detail">
                         key={index}
 				title={lodgingPage.title}
 				location={lodgingPage.location} </div>
 		            )}
-			</section>
+			</section> */}
+			<Tags />
+			<Host />
+			<Collapse equipments={equipments} description={description} />
 		</div>
 	);
-
+} else {
+	window.location.href ="/error404"
+}
 	};
 export default Lodging;
 

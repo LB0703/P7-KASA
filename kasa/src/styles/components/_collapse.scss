@@ -9,6 +9,7 @@
             margin-left: 200px;
             margin-right: 200px;
             margin-bottom: 30px;
+           
             }
       &__title {
             font-size: 20px;
@@ -35,6 +36,81 @@
             margin-right: 200px;
             padding: 40px 20px;
             margin-top: -30px;
-            
+          
+      }
+}
+
+@media (max-width: 992px) {
+      .collapse {
+            &__containerBtn {
+                  width: 80%;
+                  margin-top: 40px;
+                  margin-left: auto; 
+                  margin-right: auto;
+            }
+            &__content {
+                  width: 80%;
+                  margin-left: auto; 
+                  margin-right: auto;
+            }
+      }
+ 
+}
+
+
+@media (max-width: 768px) {
+      .aboutUs__collapse {
+            margin-top: 100px;
+            margin-bottom: 150px;
+      }
+      .collapse {
+            &__containerBtn {
+                  width: 80%;
+                  margin-left: auto; 
+                  margin-right: auto;
+                   
+                  
+            }
+            &__title {
+                  font-size: 18px;
+            }
+            &__content {
+                  width: 80%;
+                  margin-left: auto; 
+                  margin-right: auto;
+                  padding-top: 23px; 
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 20px;
+            }
+      }
+
+}
+
+@media (max-width: 576px) {
+      .aboutUs__collapse {
+            margin-top: 30px;
+      }
+      .collapse {
+            &__container {
+                  align-items: center;  
+            }
+            &__containerBtn {
+                  width: 90%;
+                  margin-left: 20px;
+                  margin-left: 20px;  
+            }
+            &__title {
+                  font-size: 13px;
+            }
+            &__content {
+                  width: 90%;
+                  margin-left: 20px;
+                  margin-left: 20px;
+                  padding-top: 23px; 
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 17px;
+            }
       }
 }

@@ -1,14 +1,14 @@
+import React from "react";
 
-// //import React from "react";
-// //import Lodging from "../pages/Lodging";
-// import'../scss/Tags.scss'
 
-// const Tags = () => {
-// 	return (
-// 		//<div>{Lodging.tags}</div>
-//            // <div>{Lodging.tags}</div>
-//            // <div>{Lodging.tags}</div>
-// 	);
-// };
+const Tags = (props) => {
+	return (
+		<ul className="tags__list">
+                  {props.tag.map((tag, index) =>
+                        <li key={index}>{tag}</li>
+                  )}
+            </ul>
+	);
+};
 
-// export default Tags;
+export default Tags;

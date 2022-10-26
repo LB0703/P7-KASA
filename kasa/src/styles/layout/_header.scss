@@ -8,7 +8,6 @@
       }
       &__logo{
             margin: 40px 0 63px 100px;  
-            
       }
       &__nav{
             display: flex;
@@ -19,7 +18,6 @@
             font-size: 24px;
             font-style: normal;
             font-weight: 500;
-            
       }
       &__link {
             color: $color-primary;
@@ -27,72 +25,71 @@
             text-decoration: none;
             &:active {
                   text-decoration: underline;
-                  
             }
-
       }
-      
 }
 
 @media (max-width: 992px) {
       .header {
-           
-            &__item{
-                  display: flex;
-                  justify-content: space-between;
-                 margin: 0;
-            }
+
             &__logo{
                   width: 160px;
-                 margin: 20px 10px; 
+                  margin: 20px 40px; 
             }
             &__nav{
                   font-size: 20px;
-                  margin-right: 60px;
+                  margin-right: 40px;
             }
             &__link {
-                margin-left: 20px;  
+                  margin-left: 40px;  
             }
-           
       } 
+}
+
+@media (max-width: 992px) {
+      .header {
+      &__nav{
+            margin-right: 50px;
+            
+      }
+      &__logo{
+            margin-left: 50px;
+      }
+}
 }
 
 @media (max-width: 768px) {
       .header {
-           
-            &__item{
-                  display: flex;
-                  justify-content: space-between;
-            }
             &__logo{
                   width: 160px;
-                  margin: 20px 10px; 
+                  margin: 20px 50px; 
             }
             &__nav{
                   font-size: 20px;
-                  margin-right: 10px;
+                  margin-right: 50px;
             }
             &__link {
-                margin-left: 20px;  
+                  margin-left: 20px;  
             }
-           
       } 
 }
 
 @media (max-width: 576px) {
       .header {
-           
+            &__item {
+            //padding-top: 20px;
+            margin-bottom: 20px;
+            }
             &__logo{
-                  width: 160px;
-                  margin: 5px 15px; 
+                  width: 135px;
+                  margin: 0px 20px; 
             }
-           
+            &__nav{
+                  margin-right: 20px;
+            }
             &__link {
-                  font-size: 18px;
+                  font-size: 14px;
                   margin-left: 10px;
-                  
-                  
             }
-           
       }
 }
