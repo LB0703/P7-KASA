@@ -1,0 +1,12 @@
+.host__container {
+display: flex;
+justify-content: flex-end;
+border-radius: 100%;
+
+      & img{
+            border-radius: 100%;  
+            margin-right: 10px;
+            height: 120px;
+            width: 120px;
+      }
+}

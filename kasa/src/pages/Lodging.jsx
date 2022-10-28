@@ -1,52 +1,54 @@
 //import { useState, useEffect } from "react";
 import React from "react";
-//import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getLodgingById } from "../api";
 import Carousel from "../components/Carousel";
 import Tags from "../components/Tags";
 import Host from "../components/Host";
+//import Rate from "../components/Rate";
 import Collapse from "../components/Collapse";
-//import Host from "../images/host.png"
-
-
+import Error404 from "./Error404.jsx"
 
 const Lodging = () => {
-	const infoLodging = getLodgingById();
-      
+	const params = useParams();
+	const infoLodging = getLodgingById(params.id);
 
-	//const [{ getLodgingById }, setGetLodgingById  ] = useState([]);
-
-	
-		//useEffect (() => {  
-		//	setGetLodgingById({ getLodgingById });
-
-	//}, [ getLodgingById ] );
-	if (infoLodging !== undefined) {
-		const {  pictures, equipments, description} = infoLodging
-	return (
-		<div>
-			
-			
+	if(infoLodging === false) {
+		// @todo : faire un navigate() vers 404
+		//<link onclick={() => Navigate("/Error404")}></link>
+		return <Error404 />;
+	}else {
+		return (
 			<div>
-				<Carousel pictures={pictures} />
-				
+				<Carousel
+					pictures={infoLodging.pictures}
+				/>
+				<div className="lodging__infos">
+					<h1>{infoLodging.title}</h1>
+					<p>{infoLodging.location}</p>
+				</div>
+				<Tags
+					tags={infoLodging.tags}
+				/>
+				{/* <Rate /> */}
+				<Host
+					name={infoLodging.host.name}
+					picture={infoLodging.host.picture}
+				/>
+				<div className="collapse__lodging">
+				<Collapse
+					title="Description"
+					content={infoLodging.description}
+				/>
+				<Collapse
+					title="Équipements"
+					content={infoLodging.equipments.join('<br/>')}
+				/>
+				</div>
 			</div>
-			{/* <section className="lodging__data">
-				{ data.map((lodgingPage, index) =>
-				<div className="lodging__detail">
-                        key={index}
-				title={lodgingPage.title}
-				location={lodgingPage.location} </div>
-		            )}
-			</section> */}
-			<Tags />
-			<Host />
-			<Collapse equipments={equipments} description={description} />
-		</div>
-	);
-} else {
-	window.location.href ="/error404"
-}
-	};
+		);
+	}
+};
+
 export default Lodging;
 
