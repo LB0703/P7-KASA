@@ -1,11 +1,14 @@
 .footer {
       background-color: black;
       height: 150px;
-      max-width: 100%;
+      //max-width: 100%;
+  
+      
       &__container {
             position: relative;
             display: flex;
             justify-content: center;
+            
       }   
       &__logo{
             margin-top: 25px;

@@ -1,9 +1,6 @@
 import React, { useState} from "react";
-//import'../styles/components/_collapse.scss'
-
 import arrowTop from "../images/arrowTop.png"
 import arrowBottom from "../images/arrowBottom.png"
-
 
 const Collapse = (props) => {
 
@@ -12,7 +9,6 @@ const Collapse = (props) => {
       const arrow = () => {
             setUp(!up);
       };
-
 
       return ( 
       <div className="collapse__container">

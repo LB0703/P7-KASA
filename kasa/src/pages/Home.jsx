@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner"
-import Gallery from "../components/Gallery";
+import Gallery from "../components/Card";
 //import "../styles/components/_gallery.scss"
 import { getLodgings } from "../api";
 //import "../styles/utils/_variables.scss";

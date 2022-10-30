@@ -1,0 +1,27 @@
+.lodging {
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      &__infosleft {
+            
+            color: $color-primary;
+            h1{
+                  font-weight: 500;
+                  font-size: 30px;
+                  line-height: normal;
+            }
+            p {
+                  font-size: 18px;
+                  padding-bottom: 10px;
+
+            }
+      }
+      &__infosright {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+      }
+}

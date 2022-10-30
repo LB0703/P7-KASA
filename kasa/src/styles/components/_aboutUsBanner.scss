@@ -3,9 +3,13 @@
       &__container{
             display: flex;
             justify-content: center;
-            margin-bottom: 50px;
-            margin-left: 100px;
-            margin-right: 100px;
+            //margin-bottom: 50px;
+            //margin-left: 100px;
+            //margin-right: 100px;
+            max-width: 1240px;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
 
       }
             

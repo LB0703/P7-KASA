@@ -1,13 +1,28 @@
+
+.collapse__container{
+      max-width: 1240px;
+      height: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 40px;
+
+}
+
+
 .collapse {
+   
       &__containerBtn {
-            display: flex;
+           display: flex;
             justify-content: space-between;
             background-color: $color-primary;
             border-radius: 5px;
             color: #fff;
             padding: 10px;
-            margin-left: 200px;
-            margin-right: 200px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            //margin-left: 200px;
+            //margin-right: 200px;
             margin-bottom: 30px;
            
             }
@@ -28,33 +43,53 @@
             background-color: $color-tertiary;
             color: $color-primary;
             border-radius: 0px 0px 5px 5px;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 30px;
+            width: 80%;
             margin-bottom: 60px;
-            margin-left: 200px;
-            margin-right: 200px;
-            padding: 40px 20px;
+            //height: 249px;
+           // margin-left: 200px;
+           // margin-right: 200px;
+padding-top: 20px;
+padding-bottom: 10px;
+padding-left: 15px;
+           // padding: 20px 20px;
             margin-top: -30px;
+            margin-left: auto;
+            margin-right: auto;
+           
           
       }
      
 }
 .collapse__lodging {
-   //width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 250px;
     display: flex;
-    justify-content: center;
-    margin-left: 0;
-          margin-right: 0; 
-      
-          .collapse__container{
     
-      width: 100%;
-      margin-bottom: 200px;
-}
-      .collapse__content{
+    
+   .collapse__container {
+      width: 1240px;
+      margin: 0;
+      
+   }
+   .collapse__containerBtn{
+     // max-width: 1240px;
+      width: 98%;
+
+      
+      margin-left: auto;
+      margin-right: auto;
+      
+   }
+
+     .collapse__content{
            
-          width: 50%;
+      width: 98%;
+      height: 249px;
       
         
             
@@ -63,12 +98,12 @@
    
       
 
-      .collapse__containerBtn {
-          width: 50%;
+    //  .collapse__containerBtn {
+   //       width: 50%;
     //margin-left: 0;
     //      margin-right: 0; 
             
-      }
+    //  }
 
 
 @media (max-width: 992px) {
