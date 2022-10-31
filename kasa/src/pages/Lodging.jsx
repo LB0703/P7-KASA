@@ -1,23 +1,29 @@
 //import { useState, useEffect } from "react";
 import React from "react";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { getLodgingById } from "../api";
 import Carousel from "../components/Carousel";
 import Tags from "../components/Tags";
 import Host from "../components/Host";
 import Rate from "../components/Rate";
 import Collapse from "../components/Collapse";
-import Error404 from "./Error404.jsx"
+//import Error404 from "./Error404.jsx"
 
 const Lodging = () => {
 	const params = useParams();
 	const infoLodging = getLodgingById(params.id);
+	const navigate = useNavigate();
+
+
+
+
+
 
 	if(infoLodging === false) {
 		// @todo : faire un navigate() vers 404
-		//<link onclick={() => Navigate("/Error404")}></link>
-		return <Error404 />;
-		//<Navigate to="/Error404" state={params.id} replace={false} />;
+		
+		//return <Error404 />;
+		navigate ("/Error404", { state : { message: "page introuvable"}} )
 	}else {
 		return (
 			<div>
@@ -38,9 +44,9 @@ const Lodging = () => {
 					picture={infoLodging.host.picture}
 				/>
 				
-				 <Rate 
-				 	rating={infoLodging.rate}
-				 /> 
+				<Rate 
+					rating={infoLodging.rating}
+				/> 
 				</div>
 				</div>
 				<div className="collapse__lodging">
@@ -50,7 +56,9 @@ const Lodging = () => {
 				/>
 				<Collapse
 					title="Équipements"
-					content={infoLodging.equipments}
+					content={infoLodging.equipments.map((equipement, index) => { 
+						return <li key={index}>{equipement}</li>;
+					})}
 				/>
 				</div>
 			</div>

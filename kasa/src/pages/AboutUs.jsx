@@ -1,10 +1,8 @@
 import React from "react";
 import AboutUsbanner from "../components/AboutUsBanner.jsx";
-//import'../styles/components/_aboutUsBanner.scss'
-//import'../styles/components/_collapse.scss'
 import { getAboutUs } from "../api";
 import Collapse from "../components/Collapse.jsx"
-//import "../styles/utils/_variables.scss";
+
 
 
 const AboutUs = () => {

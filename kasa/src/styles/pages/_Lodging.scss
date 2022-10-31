@@ -6,7 +6,11 @@
       display: flex;
       justify-content: space-between;
       &__infosleft {
-            
+            -webkit-animation:bounce-in 1s ease 0s 2 normal;
+            -moz-animation:bounce-in 1s ease 0s 1 normal;
+            -ms-animation:bounce-in 1s ease 0s 1 normal;
+            animation:bounce-in 1s ease 0s 1 normal;
+                  
             color: $color-primary;
             h1{
                   font-weight: 500;
@@ -23,5 +27,9 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            -webkit-animation:bounce-in 1s ease 0s 2 normal;
+-moz-animation:bounce-in 1s ease 0s 1 normal;
+-ms-animation:bounce-in 1s ease 0s 1 normal;
+animation:bounce-in 1s ease 0s 1 normal;
       }
 }

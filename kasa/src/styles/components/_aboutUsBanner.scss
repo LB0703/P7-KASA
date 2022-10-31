@@ -1,98 +1,151 @@
 .aboutUsbanner {
 
       &__container{
+            position: relative;
             display: flex;
             justify-content: center;
-            //margin-bottom: 50px;
+            border-radius: 25px;
+            margin-top: 50px;
             //margin-left: 100px;
             //margin-right: 100px;
             max-width: 1240px;
-            margin: auto;
+            height: 223px;
+            margin-left: auto;
+            margin-right: auto;
             padding-top: 30px;
-            padding-bottom: 30px;
+            margin-bottom: 30px;
+            &::before {
+                  content:"";
+                  position: absolute;
+                  top: 0; 
+                  left: 0;
+                  width: 100%; 
+                  height: 100%;
+                  background-image: url(../../images/bannerAboutUs.png);
+                  background-position: center;
+                  background-repeat: none;
+                  background-size: cover;
+                  filter: brightness(70%);
+                 border-radius: 25px;
+              }
+         
+}   
 
-      }
-            
-
-      &__img {
-            width: 100%;
-            border-radius: 25px;
-            filter: brightness(70%);
-            //object-fit: cover;
-      }
+      // &__img {
+      //      // position: relative;
+      //       width: 100%;
+      //       border-radius: 25px;
+      //       filter: brightness(70%);
+      //       //object-fit: cover;
+          
+      // }
   
 }
-@media (max-width: 992px) {
-      .banner {
 
-            &__container {
-                  width: 100%;
-                  margin: 0;
-                  padding: 10px 50px;
-            }
-      }
-}
 
-@media (max-width: 768px) {
-      .banner {
-
-            &__container {
-                  width: 100%;
-                  margin: 0;
-                  padding: 0 50px;
-                  height: 180px;
-            }
-            &__text {
-                  font-size: 35px;
-            }
-      } 
-}
-
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
       .aboutUsbanner {
-
-            &__container {
-                  width: 100%;
-                  margin: 0;
-                  padding: 10px 50px;
-                  height: 250px;
-            }
             &__img {
-                  border-radius: 10px;
+                  width: 0%;
+                  height: 0%;
+                  margin: 0;
+                  
             }
+            &__container {
+                  width: 92%;
+                  height: 223px;
+                  margin-right: auto;
+                  margin-left: auto;
+                  padding: 0px;
+                  
+                  &::before{
+                        background-image: url(../../images/bannerAboutUs.png);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 10px;  
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        //padding: 0;
+                       border-radius: 25px;
+                       //height: 223px;
+                  }
+            }
+           
+      }
+}
+
+@media (max-width: 992px) {
+      .aboutUsbanner {
+            &__img {
+                  width: 0%;
+                  height: 0%;
+                  margin: 0;
+            }
+            &__container {
+                 width: 90%;
+                  height: 223px;
+                  margin-right: auto;
+                  margin-left: auto;
+                 margin-top: 0;
+               
+            }
+           
       }
 }
 
 @media (max-width: 768px) {
       .aboutUsbanner {
-
-            &__container {
-                  width: 100%;
+            &__img {
+                  width: 0%;
+                  height: 0%;
                   margin: 0;
-                  padding: 0 50px;
-                  height: 180px;
             }
-           
-           
+            &__container {
+                  width: 95%;
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding: 0 50px;
+                  height: 250px;
+                  &::before{
+                        background-image: url(../../images/bannerAboutUs.png);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 10px;  
+                        width: 95%;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        padding: 0;
+                  }
+            }
       } 
 }
 
 
 @media (max-width: 576px) {
       .aboutUsbanner {
-
-            &__container {
-                  
-                  width: 100%;
-                  margin: 0 ;
-                  height: 223px;
-                  padding: 0 20px;
-            }
             &__img {
-                  width: 100%;
-                  border-radius: 10px;
-                  object-fit: cover;
+                  width: 0%;
+                  height: 0%;
+                  margin: 0;
             }
-       
+            &__container {
+                  position: relative;
+                  height: 223px;
+                  width: 100%;
+                  margin-top: 0;
+                  margin-bottom: 0;
+                        &::before{
+                              background-image: url(../../images/aboutUsBannerMobile.png);
+                              background-position: center;
+                              background-size: cover;
+                              border-radius: 10px;  
+                              width: 95%;
+                              height: 223px;
+                              margin-left: 10px;
+                              margin-right: 10px;
+                              padding: 0;
+                        }
+            }
       }
 }
