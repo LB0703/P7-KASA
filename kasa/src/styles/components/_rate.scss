@@ -1,3 +1,22 @@
-.rate {
-     
+
+
+
+
+///////////////////responsive///////////////@warn
+@media (max-width: 1300px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 556px)
+{
+.rate{
+    &__star{
+        width: 15px;
+    }
+}
 }

@@ -2,7 +2,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getLodgingById } from "../api";
-import Carousel from "../components/Carousel";
+import Gallery from "../components/Gallery";
 import Tags from "../components/Tags";
 import Host from "../components/Host";
 import Rate from "../components/Rate";
@@ -21,7 +21,7 @@ const Lodging = () => {
 	} else {
 		return (
 			<div>
-				<Carousel
+				<Gallery
 					pictures={infoLodging.pictures}
 				/>
 				<div className="lodging">

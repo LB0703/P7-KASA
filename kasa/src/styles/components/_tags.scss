@@ -18,3 +18,28 @@
             width: auto;
           }
 }
+
+
+///////////////////responsive///////////////@warn
+@media (max-width: 1300px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 556px)
+{
+.tags__list{
+   margin-bottom: 10px;
+      & li{
+            font-size: 10px;
+            height: 20px;
+           
+            border-radius: 5px;
+            padding: 5px 22px 5px 22px;
+      }
+}
+}

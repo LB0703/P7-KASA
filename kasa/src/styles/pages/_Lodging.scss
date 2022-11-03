@@ -33,3 +33,30 @@
 animation:bounce-in 1s ease 0s 1 normal;
       }
 }
+@media (max-width: 556px)
+{
+      .lodging {
+            flex-direction: column;
+           // align-items: center;
+            justify-content: space-between;
+           padding: 0 15px;
+           margin: 0;
+            &__infosright {
+                //  display: flex;
+                  flex-direction: row-reverse;
+                  align-items: center;
+                  justify-content: space-between;
+                  
+            }
+            &__infosleft {
+                  margin: 0;
+            }
+      }
+      .lodging__infosleft h1{
+            font-size: 18px;
+            margin-top: 0;
+      }
+      .lodging__infosleft p {
+            font-size: 14px;
+      }
+}
