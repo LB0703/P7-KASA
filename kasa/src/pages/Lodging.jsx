@@ -14,17 +14,11 @@ const Lodging = () => {
 	const infoLodging = getLodgingById(params.id);
 	const navigate = useNavigate();
 
-
-
-
-
-
 	if(infoLodging === false) {
 		// @todo : faire un navigate() vers 404
-		
 		//return <Error404 />;
 		navigate ("/Error404", { state : { message: "page introuvable"}} )
-	}else {
+	} else {
 		return (
 			<div>
 				<Carousel
@@ -38,28 +32,27 @@ const Lodging = () => {
 							tags={infoLodging.tags}
 						/>
 					</div>
-				<div className="lodging__infosright">
-				<Host
-					name={infoLodging.host.name}
-					picture={infoLodging.host.picture}
-				/>
-				
-				<Rate 
-					rating={infoLodging.rating}
-				/> 
-				</div>
+					<div className="lodging__infosright">
+						<Host
+							name={infoLodging.host.name}
+							picture={infoLodging.host.picture}
+						/>
+						<Rate 
+							rating={infoLodging.rating}
+						/> 
+					</div>
 				</div>
 				<div className="collapse__lodging">
-				<Collapse
-					title="Description"
-					content={infoLodging.description}
-				/>
-				<Collapse
-					title="Équipements"
-					content={infoLodging.equipments.map((equipement, index) => { 
-						return <li key={index}>{equipement}</li>;
-					})}
-				/>
+					<Collapse
+						title="Description"
+						content={infoLodging.description}
+					/>
+					<Collapse
+						title="Équipements"
+						content={infoLodging.equipments.map((equipement, index) => { 
+							return <li key={index}>{equipement}</li>;
+						})}
+					/>
 				</div>
 			</div>
 		);

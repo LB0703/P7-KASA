@@ -3,8 +3,6 @@ import AboutUsbanner from "../components/AboutUsBanner.jsx";
 import { getAboutUs } from "../api";
 import Collapse from "../components/Collapse.jsx"
 
-
-
 const AboutUs = () => {
 	const data = getAboutUs ();
 	return (
