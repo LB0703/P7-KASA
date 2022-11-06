@@ -8,10 +8,25 @@ const Header = () => {
 			<div className='header__item'>
 				<img className='header__logo'src={logo} alt='logo kasa'></img>
 			
-			<nav className='header__nav'>
-				<NavLink to="/" className="header__link" >Accueil</NavLink>
-				<NavLink to="/about-us" className="header__link">A propos</NavLink>
-			</nav>
+			<div className='header__nav'>
+				<nav>
+					<ul>
+						<NavLink 
+							to="/" 
+							className={(link) => (link.isActive ? "link-active" : " ")}
+							end 
+							>
+							<li>Accueil</li>
+						</NavLink>
+						<NavLink 
+							to="/about-us" 
+							className={(link) =>(link.isActive ? "link-active" : " ")}
+							>
+							<li>A propos</li>
+						</NavLink>
+					</ul>
+				</nav>
+			</div>
 			</div>
 		</header>
 	);
