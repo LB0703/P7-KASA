@@ -9,15 +9,15 @@ import { getLodgings } from "../api";
 //import { getAboutUs } from "../api";
 
 const Home = () => {
-	//const [dataLodging, setDataLodging] = useState ([]);
-	// [ error404, setError404] = useState(false);
+	// const [data, setData] = useState ([]);
 
-	const data = getLodgings();
+	// useEffect(() =>{
+	 const data = getLodgings();
 
-	//useEffect(() =>{
-	//	getLodgings();
+	
+		
 
-	//},[])
+	// },[])
 
 	//if(error404) {return("error")}
 	//console.log(getLodgingById('toto'));

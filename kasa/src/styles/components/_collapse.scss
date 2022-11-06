@@ -67,7 +67,7 @@ padding-left: 15px;
       max-width: 1240px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 250px;
+    //  margin-bottom: 250px;
     display: flex;
     
     
@@ -127,10 +127,10 @@ padding-left: 15px;
 
 
 @media (max-width: 768px) {
-      .aboutUs__collapse {
-            margin-top: 100px;
-            margin-bottom: 150px;
-      }
+      //.aboutUs__collapse {
+            //margin-top: 100px;
+           // margin-bottom: 150px;
+      //}
       .collapse {
             &__containerBtn {
                   width: 80%;
