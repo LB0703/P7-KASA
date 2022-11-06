@@ -1,6 +1,6 @@
 import React from "react";
-import fullS from "../images/fullS.png";
-import emptyS from "../images/emptyS.png";
+import fullStar from "../images/fullStar.png";
+import emptyStar from "../images/emptyStar.png";
 //import { useState } from "react";
 
 
@@ -15,14 +15,14 @@ const Rate = ( {rating} ) => {
                                     <img 
                                     key={index}
                                     className="rate__star" 
-                                    src={fullS} 
+                                    src={fullStar} 
                                     alt="Etoile pleine" 
                                     />
                         ) : (
                                     <img 
                                     key={index}
                                     className="rate__star" 
-                                    src={emptyS} 
+                                    src={emptyStar} 
                                     alt="Etoile vide" 
                                     />
                         
