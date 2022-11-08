@@ -17,16 +17,15 @@ footer {
             font-size: 24px;
       }
       &__text {
-           
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             color: $color-secondary;
-            
-            
+            margin-top: 10px;
       }
 }
 
+////////////////////////////////Responsive//////////////////////////////
 
 @media (max-width: 576px) {
       .footer { 

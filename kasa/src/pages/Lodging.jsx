@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getLodgingById } from "../api";
@@ -8,7 +6,7 @@ import Tags from "../components/Tags";
 import Host from "../components/Host";
 import Rate from "../components/Rate";
 import Collapse from "../components/Collapse";
-//import Error404 from "./Error404.jsx"
+
 
 const Lodging = () => {
 
@@ -66,16 +64,20 @@ const Lodging = () => {
 				</div>
 			</div>
 			<div className="collapse__lodging">
+				<div className="collapse__lodgingBox">
 				<Collapse
 					title="Description"
 					content={infoLodging.description}
 				/>
+				</div>
+				<div className="collapse__lodgingBox">
 				<Collapse
 					title="Équipements"
 					content={infoLodging.equipments.map((equipement, index) => {
 						return <li key={index}>{equipement}</li>;
 					})}
 				/>
+				</div>
 			</div>
 		</div>
 	);

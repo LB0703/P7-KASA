@@ -7,17 +7,17 @@ const AboutUs = () => {
 	const data = getAboutUs ();
 	return (
 		<div>
-			<AboutUsbanner />
-			<div className="aboutUs__collapse">
-				{ data.map((item, index) => (
-					<Collapse 
-					key={index} 
-					title={item.title} 
-					content={item.content} />
+			<main>
+				<AboutUsbanner />
+				<div className="aboutUs__collapse">
+					{ data.map((item, index) => (
+						<Collapse 
+						key={index} 
+						title={item.title} 
+						content={item.content} />
 					))}
-
-			</div> 
-			
+				</div> 
+			</main>
 		</div> 
 	);
 };

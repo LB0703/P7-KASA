@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Tags = (props) => {
 	return (
 		<ul className="tags__list">

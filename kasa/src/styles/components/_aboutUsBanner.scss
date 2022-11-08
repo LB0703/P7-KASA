@@ -1,13 +1,10 @@
 .aboutUsbanner {
-
       &__container{
             position: relative;
             display: flex;
             justify-content: center;
             border-radius: 25px;
             margin-top: 50px;
-            //margin-left: 100px;
-            //margin-right: 100px;
             max-width: 1240px;
             height: 223px;
             margin-left: auto;
@@ -26,22 +23,12 @@
                   background-repeat: none;
                   background-size: cover;
                   filter: brightness(70%);
-                 border-radius: 25px;
-              }
-         
-}   
-
-      // &__img {
-      //      // position: relative;
-      //       width: 100%;
-      //       border-radius: 25px;
-      //       filter: brightness(70%);
-      //       //object-fit: cover;
-          
-      // }
-  
+                  border-radius: 25px;
+            }
+      }   
 }
 
+////////////////////////////////Responsive//////////////////////////////
 
 @media (max-width: 1300px) {
       .aboutUsbanner {
@@ -66,12 +53,9 @@
                         width: 100%;
                         margin-left: auto;
                         margin-right: auto;
-                        //padding: 0;
-                       border-radius: 25px;
-                       //height: 223px;
+                        border-radius: 25px;
                   }
             }
-           
       }
 }
 
@@ -83,14 +67,12 @@
                   margin: 0;
             }
             &__container {
-                 width: 90%;
+                  width: 90%;
                   height: 223px;
                   margin-right: auto;
                   margin-left: auto;
-                 margin-top: 0;
-               
+                  margin-top: 0;
             }
-           
       }
 }
 

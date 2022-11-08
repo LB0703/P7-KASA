@@ -1,29 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, } from "react-router-dom";
 import Banner from "../components/Banner"
 import Gallery from "../components/Card";
-//import "../styles/components/_gallery.scss"
 import { getLodgings } from "../api";
-//import "../styles/utils/_variables.scss";
-//import { getLodgingById } from "../api";
-//import { getAboutUs } from "../api";
 
 const Home = () => {
-	// const [data, setData] = useState ([]);
+	const [data, setData] = useState ([]);
 
-	// useEffect(() =>{
-	 const data = getLodgings();
-
+	useEffect(() => {
+		setData(getLodgings);
+	}, []);
 	
-		
-
-	// },[])
-
-	//if(error404) {return("error")}
-	//console.log(getLodgingById('toto'));
-	//.log(getLodgingById('c67ab8a7'));
-	//console.log(getAboutUs());
-
 	return (
 		<div>
 			<Banner />

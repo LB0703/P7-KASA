@@ -22,16 +22,19 @@ const Gallery = (props) => {
 
     if (slides.length === 1) {
 		return (
-            <section>
-                <img src={slides[SliderPosition]} alt="Photos divers de chaque appartement" />
-            </section>
+            <div className="gallery__container">
+                <img className="gallery__pictures"
+				src={slides[SliderPosition]} 
+				alt="Photos divers de chaque appartement" 
+				/>
+            </div>
         );
     } else {
 		return (
 			<div className="gallery__container">
 				<img className="galleryArrowLeft"src={arrowLeft} alt="Flèche gauche" onClick={previousSlide}/>
 				<ul>
-					{props.pictures.map((picture, index) =>
+					{props.pictures.map((index) =>
 						<li key={index}>
 							<img className="gallery__pictures" 
 							src={slides[SliderPosition]} 

@@ -28,25 +28,25 @@
             flex-direction: column;
             align-items: flex-end;
             -webkit-animation:bounce-in 1s ease 0s 2 normal;
--moz-animation:bounce-in 1s ease 0s 1 normal;
--ms-animation:bounce-in 1s ease 0s 1 normal;
-animation:bounce-in 1s ease 0s 1 normal;
+            -moz-animation:bounce-in 1s ease 0s 1 normal;
+            -ms-animation:bounce-in 1s ease 0s 1 normal;
+            animation:bounce-in 1s ease 0s 1 normal;
       }
 }
+
+////////////////////////////Responsive////////////////////////
+
 @media (max-width: 556px)
 {
       .lodging {
             flex-direction: column;
-           // align-items: center;
             justify-content: space-between;
-           padding: 0 15px;
-           margin: 0;
+            padding: 0 15px;
+            margin: 0;
             &__infosright {
-                //  display: flex;
                   flex-direction: row-reverse;
                   align-items: center;
                   justify-content: space-between;
-                  
             }
             &__infosleft {
                   margin: 0;

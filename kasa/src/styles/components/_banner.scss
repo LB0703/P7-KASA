@@ -1,22 +1,19 @@
 .banner {
-
       &__container {
             position:relative;  
             display: flex;
             height: 223px;
-           max-width: 1240px;
-           margin: auto;
-           padding-top: 30px;
-           padding-bottom: 30px;
-           border-radius: 25px;
-            
+            max-width: 1240px;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-radius: 25px;
       }
       &__img {
             width: 100%;
             border-radius: 25px;
             filter: brightness(70%);
             object-fit: cover;
-      
       }
       &__text {
             position: absolute;
@@ -24,7 +21,6 @@
             bottom: 60%;
             left: 0;
             right: 0;
-            
             font-style: normal;
             font-weight: 500;
             font-size: 48px;
@@ -34,11 +30,11 @@
       }
 }
 
+////////////////////////////////Responsive//////////////////////////////
+
 @media (max-width: 1300px) {
       .banner {
-
             &__container {
-     
                   margin-left:  50px;
                   margin-right: 50px;
                   margin-top: 0;
@@ -51,10 +47,8 @@
       }
 }
 
-
 @media (max-width: 991px) {
       .banner {
-
             &__container {
                   width: 90%;
                   height: 200px;
@@ -62,7 +56,6 @@
                   margin-right: auto;
                   padding-top: 0;
                   padding-bottom: 0;
-                
             }
             &__text {
                   font-size: 35px;
@@ -72,11 +65,8 @@
 
 @media (max-width: 768px) {
       .banner {
-
             &__container {
-                  
-                  //width: 85%;
-                height: 180px;
+                  height: 180px;
                   padding: 0;
             }
             &__text {
@@ -87,13 +77,9 @@
 
 @media (max-width: 576px) {
       .banner {
-
             &__container {
-                  
-                 // width: 100%;
                   margin-left: auto;
                   margin-right: auto;
-                  //margin-bottom: 10px;
                   height: 111px;
                   padding: 0 ;
             }
@@ -107,8 +93,6 @@
                   padding-right: 20px;
                   top: 30%;
                   text-align: start;
-            }
-           
-            
+            } 
       }
 }

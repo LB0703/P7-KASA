@@ -5,9 +5,3 @@ $color-secondary: #ffffff;
 $color-tertiary: #f7f7f7;
 $color-fourth: #000000;
 
-@keyframes bounce-in {
-      0%{ opacity: 0; transform: scale(.3); }
-      50%{ opacity: 1; transform: scale(1.0); }
-      70%{ transform: scale(0.9); }
-      100%{ transform: scale(1); }
-      }
