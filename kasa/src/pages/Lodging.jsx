@@ -46,14 +46,14 @@ const Lodging = () => {
 				pictures={infoLodging.pictures}
 			/>
 			<div className="lodging">
-				<div className="lodging__infosleft">
+				<div className="lodging__infosLeft">
 					<h1>{infoLodging.title}</h1>
 					<p>{infoLodging.location}</p>
 					<Tags
 						tags={infoLodging.tags}
 					/>
 				</div>
-				<div className="lodging__infosright">
+				<div className="lodging__infosRight">
 					<Host
 						name={infoLodging.host.name}
 						picture={infoLodging.host.picture}

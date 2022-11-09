@@ -50,6 +50,7 @@
 
 .collapse__lodging{
       display: flex;
+
       justify-content: space-between;
       max-width: 1240px;
       margin-left: auto;
@@ -124,16 +125,12 @@
             }
             &__containerBtn {
                   width: 90%;
-                  margin-left: 20px;
-                  margin-left: 20px;  
             }
             &__title {
                   font-size: 13px;
             }
             &__content {
                   width: 90%;
-                  margin-left: 20px;
-                  margin-left: 20px;
                   padding-top: 23px; 
                   font-size: 12px;
                   font-weight: 400;
@@ -141,5 +138,10 @@
             }
 
       }
-    
+    .collapse__lodging{
+   
+      flex-direction: column;
+     
+     
+}
  }

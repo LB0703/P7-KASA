@@ -26,7 +26,14 @@
 
 }
 @media (max-width: 991px) {
-
+      .tags__list { 
+            max-width: 400px;
+            
+            
+                  & li{
+                        margin-top: 10px;
+}
+      }
 }
 @media (max-width: 768px) {
 

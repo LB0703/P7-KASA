@@ -5,12 +5,11 @@
       margin-bottom: 50px;
       display: flex;
       justify-content: space-between;
-      &__infosleft {
+      &__infosLeft {
             -webkit-animation:bounce-in 1s ease 0s 2 normal;
             -moz-animation:bounce-in 1s ease 0s 1 normal;
             -ms-animation:bounce-in 1s ease 0s 1 normal;
-            animation:bounce-in 1s ease 0s 1 normal;
-                  
+            animation:bounce-in 1s ease 0s 1 normal;      
             color: $color-primary;
             h1{
                   font-weight: 500;
@@ -20,7 +19,6 @@
             p {
                   font-size: 18px;
                   padding-bottom: 10px;
-
             }
       }
       &__infosright {
@@ -35,28 +33,60 @@
 }
 
 ////////////////////////////Responsive////////////////////////
+@media (max-width: 991px) {
+      .lodging {
+            & h1 {
+                  font-size: 25px;
+            }
+            &__infosLeft{
+                  margin-left: 30px;
+
+            }
+            &__infosRight {
+                  margin-right: 30px;
+             
+
+            }
+      }
+}
+
+
+
+
+
 
 @media (max-width: 556px)
 {
       .lodging {
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 0 15px;
-            margin: 0;
-            &__infosright {
-                  flex-direction: row-reverse;
-                  align-items: center;
-                  justify-content: space-between;
+          display: flex;
+          flex-direction: column;
+            
+            & h1 {
+                  font-size: 18px;
             }
+            & p {
+                  font-size: 14px;
+            }
+            &__infosright {
+                  display: inline-flex;
+    flex-direction: row-reverse;
+
+   
+    
+}
+
+
+            
             &__infosleft {
                   margin: 0;
             }
+            
       }
-      .lodging__infosleft h1{
-            font-size: 18px;
-            margin-top: 0;
-      }
-      .lodging__infosleft p {
-            font-size: 14px;
-      }
+      //.lodging__infosleft h1{
+       //     font-size: 18px;
+        //    margin-top: 0;
+     // }
+    //  .lodging__infosleft p {
+     //       font-size: 14px;
+     // }
 }

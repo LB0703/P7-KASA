@@ -1,4 +1,9 @@
-
+.rate {
+    &__container {
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+}
 
 ////////////////////////////////Responsive//////////////////////////////
 
@@ -7,7 +12,15 @@
 
 }
 @media (max-width: 991px) {
-
+.rate { 
+    &__container {
+        margin-right: 20px;
+    }
+    &__star{
+        width: 25px;
+        
+    }
+}
 }
 @media (max-width: 768px) {
 
