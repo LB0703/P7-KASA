@@ -10,6 +10,7 @@
             margin-right: auto;
             margin-bottom: 50px;
             max-width: 1240px;
+            padding: 20px;
       }
       &__item{
             display: flex;
@@ -18,6 +19,8 @@
             position: relative;
             flex-wrap: wrap;
             border-radius: 10px;
+          
+           
       }
       &__img {
             width: 100%;
@@ -26,17 +29,27 @@
             object-position: center;
             border-radius: 10px;
             position: absolute;
-            filter: brightness(70%);
+            
       }
       &__title {
-            position: relative;
-            font-weight: 500;
-            top: 83%;
-            left: 5%;
-            padding-right: 50px;
-            font-size: 18px;
+            position : absolute;
             color: $color-tertiary;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+            margin: 0 20px 0 20px;
+            bottom: 4%;
+            left: 0%;
+            
       }
+}
+.background{
+      background: linear-gradient(20deg, rgba(0, 0, 0, 0.5) 5%, rgba(255, 255, 255, 0) 35%);
+      width: 100%;       
+      height: 100%;
+      border-radius: 10px;
+      opacity: 1;
+      position: absolute;
 }
 
 a.card {
@@ -45,11 +58,12 @@ a.card {
       width: 31%;
       margin: 25px 0;
       border-radius: 10px;
-      transition: 0.3s;
       text-decoration: none;
+      transition: 0.3s;
             &:hover {
                   transform: scale(1.03);
             }
+
 }
 
 //////////////////////////////////////RESPONSIVE///////////////////////////////////
@@ -86,8 +100,7 @@ a.card {
                   padding: 0 20px;   
             }
             &__title {
-                  top: 80%;
-                  font-size: 20px;
+                  font-size: 18px;
             }
       }
       a.card {
@@ -105,10 +118,6 @@ a.card {
             &__container{
                   display: flex;
                   justify-content: space-between;
-            }
-            &__title {
-                  top: 75%;
-                  font-size: 20px;
             }
       }
       a.card {
@@ -137,11 +146,6 @@ a.card {
             &__img {
                   width: 100%;
                   height: 100%;
-            }
-            &__title {
-                  top: 75%;
-                  font-size: 18px;
-                  font-weight: 500;
             }
       }
       a.card {

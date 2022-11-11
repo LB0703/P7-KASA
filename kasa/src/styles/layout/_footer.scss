@@ -19,9 +19,9 @@ footer {
       &__text {
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 24px;
             color: $color-secondary;
-            margin-top: 10px;
+            margin-top: 20px;
       }
 }
 
@@ -29,8 +29,10 @@ footer {
 
 @media (max-width: 576px) {
       .footer { 
+            height: 209px;
             &__logo{ 
                   width: 122px;
+                  height: 39px;
             }
             &__text{
                   font-size: 12px;

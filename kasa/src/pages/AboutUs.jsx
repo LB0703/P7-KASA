@@ -7,17 +7,18 @@ const AboutUs = () => {
 	const data = getAboutUs ();
 	return (
 		<div>
-			<main>
-				<AboutUsbanner />
+			<AboutUsbanner />
 				<div className="aboutUs__collapse">
 					{ data.map((item, index) => (
 						<Collapse 
 						key={index} 
 						title={item.title} 
-						content={item.content} />
+						content={item.content} 
+						open={(index === 0) ? true : false}
+						/>
 					))}
+					
 				</div> 
-			</main>
 		</div> 
 	);
 };

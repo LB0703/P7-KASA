@@ -1,3 +1,4 @@
+//////////////AboutUs page//////////////
 .collapse {
       &__container{
             max-width: 1240px;
@@ -11,14 +12,16 @@
             background-color: $color-primary;
             border-radius: 5px;
             color: #fff;
-            padding: 10px;
+            padding-left: 15px;
+            align-items: center;
             width: 80%;
+            height: 47px;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 30px;
       }
       &__title {
-            font-size: 20px;
+            font-size: 24px;
             background: $color-primary;
       }
       &__arrow {
@@ -34,49 +37,47 @@
             background-color: $color-tertiary;
             color: $color-primary;
             border-radius: 0px 0px 5px 5px;
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 400;
-            line-height: 30px;
+            line-height: 34px;
             width: 80%;
             margin-bottom: 60px;
             padding-top: 20px;
-            padding-bottom: 10px;
-            padding-left: 15px;
+            padding-bottom: 15px;
+            padding-right: 20px;
+            padding-left: 20px;
             margin-top: -30px;
             margin-left: auto;
             margin-right: auto;
       }
 }
-
+//////////Lodging page/////////////////
 .collapse__lodging{
       display: flex;
-
       justify-content: space-between;
       max-width: 1240px;
       margin-left: auto;
       margin-right: auto;
 }
-// .collapse__lodging .collapse__container  {
-   
-// }
 .collapse__lodgingBox {
-      width: 100%;   
+      width: 45%;   
 }
 .collapse__lodging .collapse__containerBtn {
-      width: 95%;
+      width: 100%;
 }
-
 .collapse__lodging .collapse__content {
-      width: 95%;
+      width: 100%;
+      min-height: 200px;
 }
-
-
-
 
 
 ///////////////////////////////////////Responsive////////////////////////////////////
 
 @media (max-width: 992px) {
+      .aboutUs__collapse {
+            margin-top: 30px;
+            margin-bottom: 200px;
+      }
       .collapse {
             &__containerBtn {
                   width: 80%;
@@ -90,9 +91,24 @@
                   margin-right: auto;
             }
       }
+      //////////Lodging page/////////////////
+      .collapse__lodgingBox {
+            margin-right: auto;
+            margin-left: auto; 
+      }
+      .collapse__lodging .collapse__containerBtn {
+                  width: 100%;
+            }
+      .collapse__lodging .collapse__content {
+            width: 100%;
+      }
 }
 
 @media (max-width: 768px) {
+      .aboutUs__collapse {
+            margin-top: 30px;
+            margin-bottom: 200px;
+      }
       .collapse {
             &__containerBtn {
                   width: 80%;
@@ -112,36 +128,66 @@
                   line-height: 20px;
             }
       }
-
+//////////Lodging page/////////////////
+            .collapse__lodgingBox {
+                  margin-right: auto;
+                  margin-left: auto;
+            }
+            .collapse__lodging .collapse__containerBtn {
+                  width: 100%;
+            }
+            .collapse__lodging .collapse__content {
+                  width: 100%;
+            }
 }
 
 @media (max-width: 576px) {
       .aboutUs__collapse {
             margin-top: 30px;
+            margin-bottom: 200px;
       }
       .collapse {
             &__container {
                   align-items: center;
+                  margin-top: 0;
+                  
             }
             &__containerBtn {
-                  width: 90%;
+                  width: 95%;
+                  height: 30px;
+                  margin-top: 15px;
+                  margin-bottom: 15px;
             }
             &__title {
                   font-size: 13px;
             }
             &__content {
-                  width: 90%;
-                  padding-top: 23px; 
+                  width: 90%; 
                   font-size: 12px;
                   font-weight: 400;
                   line-height: 17px;
+                  padding: 23px 10px 50px 10px;
+                  margin-top: -15px;
+                  margin-bottom: 10px;
             }
-
+            &__arrow {
+                  width: 47px;
+                  height: 10px;
+            }
       }
-    .collapse__lodging{
-   
-      flex-direction: column;
-     
-     
+      //////////Lodging page/////////////////
+      .collapse__lodging{
+            flex-direction: column;
+      }
+      .collapse__lodgingBox {
+            width: 100%;  
+            padding: 0;
+      }
+      .collapse__lodging .collapse__containerBtn {
+            width: 95%;
+            margin-top: 0;
+      }
+      .collapse__lodging .collapse__content {
+            width: 95%;
+      }
 }
- }
