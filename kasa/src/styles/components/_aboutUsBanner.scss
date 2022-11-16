@@ -108,11 +108,11 @@
                   height: 223px;
             }
             &__container {
-                  position: relative;
                   height: 223px;
                   margin-left: auto;
                   margin-right: auto;
                         &::before{
+                              content: " ";
                               background-image: url(../../images/aboutUsBannerMobile.png);
                               background-position: center;
                               background-size: cover;

@@ -88,11 +88,13 @@
                   border-radius: 10px;
             }
             &__text{
+                  width: 270px;
                   font-size: 25px;
                   padding-left: 20px;
                   padding-right: 20px;
                   top: 30%;
                   text-align: start;
+                  align-items: center;
             } 
       }
 }
