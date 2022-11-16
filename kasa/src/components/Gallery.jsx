@@ -10,13 +10,13 @@ const Gallery = (props) => {
 
      //If the current slide is the first slide, then set the current slide to the last slide, otherwise
      //set the current slide to the previous slide.
-     
+
 			const previousSlide = () => {
 				setSliderPosition( SliderPosition === 0 ? slides.length -1 : SliderPosition -1)
 			};
 			
      //If the current slide is the last slide, then go to the first slide, otherwise go to the next slide.
-     
+
 			const nextSlide = () => {
 				setSliderPosition(SliderPosition === slides.length -1 ? 0: SliderPosition +1);
 			}; 

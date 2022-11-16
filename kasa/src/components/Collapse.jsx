@@ -4,7 +4,8 @@ import arrowBottom from "../images/arrowBottom.png"
 
 const Collapse = (props) => {
 
-      const [up, setUp ] = useState(props.open ?? false)
+      const [up, setUp ] = useState(false)
+      //(props.open ?? false)
 
       const arrow = () => {
             setUp(!up);
@@ -14,7 +15,7 @@ const Collapse = (props) => {
       <div className="collapse__container">
             <div className="collapse__containerBtn" onClick={arrow}>
                   <div className="collapse__btn">
-                        <p className="collapse__title">{props.title}</p>{''}
+                        <p className="collapse__title">{props.title}</p>
                   </div>
                   {up ? (
                         <img className="collapse__arrow" src={arrowTop} alt="Flèche direction haut" />
@@ -22,9 +23,8 @@ const Collapse = (props) => {
                         <img className="collapse__arrow" src={arrowBottom} alt="Flèche direction bas" />
                   )}
             </div>
-      
             {up && <div className="collapse__content"> {props.content} </div>}
-            </div>
+      </div>
       ) 
 };
 

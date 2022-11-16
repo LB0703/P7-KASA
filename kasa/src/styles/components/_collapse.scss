@@ -92,6 +92,9 @@
             }
       }
       //////////Lodging page/////////////////
+      .collapse__lodging{
+            margin-bottom: 100px;
+      }
       .collapse__lodgingBox {
             margin-right: auto;
             margin-left: auto; 
@@ -129,6 +132,9 @@
             }
       }
 //////////Lodging page/////////////////
+            .collapse__lodging{
+                  margin-bottom: 100px;
+            }
             .collapse__lodgingBox {
                   margin-right: auto;
                   margin-left: auto;
@@ -153,7 +159,7 @@
                   
             }
             &__containerBtn {
-                  width: 95%;
+                  width: 90%;
                   height: 30px;
                   margin-top: 15px;
                   margin-bottom: 15px;
@@ -165,7 +171,7 @@
                   width: 90%; 
                   font-size: 12px;
                   font-weight: 400;
-                  line-height: 17px;
+                  line-height: 18px;
                   padding: 23px 10px 50px 10px;
                   margin-top: -15px;
                   margin-bottom: 10px;
@@ -178,16 +184,18 @@
       //////////Lodging page/////////////////
       .collapse__lodging{
             flex-direction: column;
+            margin-bottom: 100px;
       }
       .collapse__lodgingBox {
             width: 100%;  
             padding: 0;
+            
       }
       .collapse__lodging .collapse__containerBtn {
-            width: 95%;
+            width: 90%;
             margin-top: 0;
       }
       .collapse__lodging .collapse__content {
-            width: 95%;
+            width: 90%;
       }
 }

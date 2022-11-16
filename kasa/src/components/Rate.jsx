@@ -1,16 +1,14 @@
 import React from "react";
 import fullStar from "../images/fullStar.png";
 import emptyStar from "../images/emptyStar.png";
-//import { useState } from "react";
-
 
 const Rate = ( {rating} ) => {
       const star = [1, 2, 3, 4, 5];
 
       return (     
             <div className="rate__container">
-                  {star.map((stars, index) =>
-                        rating >= stars
+                  {star.map((rate, index) =>
+                        rating >= rate
                               ? (
                                     <img 
                                     key={index}
@@ -25,9 +23,9 @@ const Rate = ( {rating} ) => {
                                     src={emptyStar} 
                                     alt="Etoile vide" 
                                     />
-                        
+                                    
                         )
-                  ) }
+                  ) }    
             </div>
       )
 };

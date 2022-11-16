@@ -68,7 +68,7 @@ const Lodging = () => {
 				<Collapse
 					title="Description"
 					content={infoLodging.description}
-					open={true}
+					//open={true}
 				/>
 				</div>
 				<div className="collapse__lodgingBox">
@@ -77,7 +77,7 @@ const Lodging = () => {
 					content={infoLodging.equipments.map((equipement, index) => {
 						return <li key={index}>{equipement}</li>;
 					})}
-					open={true}
+					//open={true}
 				/>
 				</div>
 			</div>

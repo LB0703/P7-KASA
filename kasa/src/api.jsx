@@ -620,7 +620,7 @@ export const getLodgings = () => {
 	];
 }
 
-export const getLodgingById = (id = '') => {
+export const getLodgingById = (id) => {
 	const lodgings = getLodgings();
 	for(const index in lodgings) {
 		const lodging = lodgings[index];

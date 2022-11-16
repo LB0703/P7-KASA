@@ -7,30 +7,22 @@
 
 ////////////////////////////////Responsive//////////////////////////////
 
-
-@media (max-width: 1300px) {
-
-}
 @media (max-width: 991px) {
-.rate { 
-    &__container {
-        margin-right: 20px;
-    }
-    &__star{
-        width: 25px;
-        
+    .rate { 
+        &__container {
+            margin-right: 20px;
+        }
+        &__star{
+            width: 25px;
+        }
     }
 }
-}
-@media (max-width: 768px) {
 
-}
-@media (max-width: 556px)
-{
-.rate{
-    &__star{
-        width: 15px;
-        margin-left: auto;
+@media (max-width: 556px) {
+    .rate{
+        &__star{
+            width: 15px;
+            margin-left: auto;
+        }
     }
-}
 }
