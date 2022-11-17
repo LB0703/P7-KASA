@@ -14,7 +14,7 @@ const AboutUs = () => {
 						key={index} 
 						title={item.title} 
 						content={item.content} 
-						//open={(index === 0) ? true : false}
+						open={false} //open={(index === 0) ? true : false}
 						/>
 					))}
 					

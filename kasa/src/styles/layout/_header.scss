@@ -32,53 +32,38 @@
 
 ///////////////////////////////////RESPONSIVE////////////////////////////
 
-@media (max-width: 992px) {
-      .header {
-            &__logo{
-                  width: 160px;
-                  margin: 20px 40px; 
-            }
-            &__nav{
-                  font-size: 20px;
-                  margin-right: 40px;
-            }
-            &__link {
-                  margin-left: 40px;  
-            }
-      } 
-}
+
 
 @media (max-width: 1300px) {
       .header {
-            &__nav{
-                  margin-right: 50px;
-            }
-            &__logo{
-                  margin-left: 50px;
+            &__item{ 
+                  width: 90%;
             }
       }
 }
 
 @media (max-width: 991px) {
       .header {
-            &__nav{
-                  margin-right: 50px;
-            }
-            &__logo{
-                  margin-left: 50px;
-            }
+            &__item{ 
+                  width: 95%;
+                  margin-bottom: 30px;
       }
+            &__logo{
+                  width: 160px;
+            }
+            &__nav{
+                  font-size: 20px;
+            }
+      } 
 }
 
 @media (max-width: 768px) {
       .header {
             &__logo{
                   width: 160px;
-                  margin: 20px 50px; 
             }
             &__nav{
                   font-size: 20px;
-                  margin-right: 50px;
             }
             &__link {
                   margin-left: 20px;  
@@ -89,16 +74,18 @@
 @media (max-width: 576px) {
       .header {
             &__item {
+                  width: 90%;
                   margin-bottom: 20px;
+                  margin-right: auto;
+                  margin-left: auto;
             }
             &__logo{
                   width: 100px;
-                  margin: 0px 20px; 
+                  margin: 0px; 
             }
             &__nav{
-                  margin-right: 20px;
+                  margin-right: 5px;
             }
-                  
       }
       li {
             font-size: 16px;

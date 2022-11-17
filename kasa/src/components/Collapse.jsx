@@ -4,8 +4,7 @@ import arrowBottom from "../images/arrowBottom.png"
 
 const Collapse = (props) => {
 
-      const [up, setUp ] = useState(false)
-      //(props.open ?? false)
+      const [up, setUp ] = useState(props.open ?? false)
 
       const arrow = () => {
             setUp(!up);

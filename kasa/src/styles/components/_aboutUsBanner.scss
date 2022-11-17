@@ -65,7 +65,7 @@
                   margin: 0;
             }
             &__container {
-                  width: 90%;
+                  width: 95%;
                   height: 223px;
                   margin-right: auto;
                   margin-left: auto;
@@ -76,26 +76,13 @@
 
 @media (max-width: 768px) {
       .aboutUsbanner {
-            &__img {
-                  width: 0%;
-                  height: 0%;
-                  margin: 0;
-            }
             &__container {
                   width: 95%;
-                  margin-left: auto;
-                  margin-right: auto;
-                  padding: 0 50px;
-                  height: 250px;
                   &::before{
                         background-image: url(../../images/bannerAboutUs.png);
-                        background-position: center;
+                        border-radius: 25px; 
+                        object-fit: cover;
                         background-size: cover;
-                        border-radius: 10px;  
-                        width: 95%;
-                        margin-left: 10px;
-                        margin-right: 10px;
-                        padding: 0;
                   }
             }
       } 
@@ -106,19 +93,17 @@
             &__img {
                   width: 100%;
                   height: 223px;
+                  border-radius: 10px;
             }
             &__container {
                   height: 223px;
-                  margin-left: auto;
-                  margin-right: auto;
+                  width: 90%;
                         &::before{
                               content: " ";
                               background-image: url(../../images/aboutUsBannerMobile.png);
-                              background-position: center;
+                              border-radius: 10px; 
+                              object-fit: cover; 
                               background-size: cover;
-                              border-radius: 10px;  
-                              width: 95%;
-                              height: 223px;
                         }
             }
       }

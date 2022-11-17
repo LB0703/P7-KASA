@@ -27,7 +27,6 @@
             object-position: center;
             border-radius: 10px;
             position: absolute;
-            
       }
       &__title {
             position : absolute;
@@ -38,7 +37,6 @@
             margin: 0 20px 0 20px;
             bottom: 4%;
             left: 0%;
-            
       }
 }
 .background{
@@ -89,7 +87,7 @@ a.card {
                   width: 334px; 
             }
             &__container {
-                  width: 90%;
+                  width: 95%;
                   background-color: $color-tertiary;
                   margin-left:  auto;
                   margin-right: auto;
@@ -115,6 +113,7 @@ a.card {
             &__container{
                   display: flex;
                   justify-content: space-between;
+                  width: 95%;
             }
       }
       a.card {
@@ -136,7 +135,7 @@ a.card {
                   margin-top: 10px;
             }
             &__item{
-                  width: 100%;
+                  width: 95%;
                   height: 255px;
             }
             &__img {

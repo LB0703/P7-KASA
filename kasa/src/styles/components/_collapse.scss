@@ -19,6 +19,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 30px;
+            cursor: pointer;
       }
       &__title {
             font-size: 24px;
@@ -51,6 +52,10 @@
             margin-right: auto;
       }
 }
+.aboutUs__collapse {
+      margin-top: 30px;
+      margin-bottom: 200px;
+}
 //////////Lodging page/////////////////
 .collapse__lodging{
       display: flex;
@@ -72,11 +77,16 @@
 
 
 ///////////////////////////////////////Responsive////////////////////////////////////
+@media (max-width: 1300px) {
+      .collapse__lodging{
+            width: 90%;
+      }
+}
 
 @media (max-width: 992px) {
       .aboutUs__collapse {
             margin-top: 30px;
-            margin-bottom: 200px;
+            margin-bottom: 300px;
       }
       .collapse {
             &__containerBtn {
@@ -94,6 +104,7 @@
       //////////Lodging page/////////////////
       .collapse__lodging{
             margin-bottom: 100px;
+            width: 100%;
       }
       .collapse__lodgingBox {
             margin-right: auto;
@@ -156,7 +167,6 @@
             &__container {
                   align-items: center;
                   margin-top: 0;
-                  
             }
             &__containerBtn {
                   width: 90%;
@@ -185,6 +195,7 @@
       .collapse__lodging{
             flex-direction: column;
             margin-bottom: 100px;
+            width: 100%;
       }
       .collapse__lodgingBox {
             width: 100%;  
