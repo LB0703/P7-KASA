@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import AboutUsbanner from "../components/AboutUsBanner.jsx";
-//import { getAboutUs } from "../api";
 import Collapse from "../components/Collapse.jsx"
 
 const AboutUs = () => {
@@ -37,7 +36,7 @@ const AboutUs = () => {
 		<div>
 			<AboutUsbanner />
 				<div className="aboutUs__collapse">
-					{ data && data.length === data.map((item, index) => (
+					{ data && data.length>0 && data.map((item, index) => (
 						<Collapse 
 						key={index} 
 						title={item.title} 

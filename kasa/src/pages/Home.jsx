@@ -29,7 +29,6 @@ const getData =() => {
 		});
 };
 
-
 	useEffect(() => {
 		getData();
 	}, []);

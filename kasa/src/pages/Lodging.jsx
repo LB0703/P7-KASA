@@ -6,31 +6,15 @@ import Host from "../components/Host";
 import Rate from "../components/Rate";
 import Collapse from "../components/Collapse";
 
-
-
 const Lodging = () => {
 
 	const { id } = useParams();
 	const navigate = useNavigate();
-	const [infoLodging, setInfoLodging] = useState({
-		"id": "",
-		"title": "",
-		"cover": "",
-		"pictures": [],
-		"description": "",
-		"host": {
-			"name": "",
-			"picture": ""
-		},
-		"rating": "5",
-		"location": "",
-		"equipments": [],
-		"tags": []
-	});
+	const [infoLodging, setInfoLodging] = useState(null);
 
 	useEffect(() => {
-		const getData = () => {
-			fetch("logements.json", {
+		const fetchData = () => {
+			fetch("../logements.json", {
 				headers: {
 					"Content-Type": "application/json",
 					Accept: "application/json",
@@ -48,22 +32,21 @@ const Lodging = () => {
 				console.log("error")
 			})
 		}
-	
-		
-	
-		getData()
+		fetchData();
 	}, [id]);
 	
+	// if(infoLodging === false) {
+	// 	return  navigate ("/404") 
+	// } else {
+	// 	setInfoLodging(id)
+	// }
+	
 
-	if(id === false) {
-		navigate("/404");
-	}
-	else {
-		setInfoLodging(id);
-	}
 
 	return (
 		<div>
+		{infoLodging && (
+			<div>
 			<Gallery
 				pictures={infoLodging.pictures}
 			/>
@@ -103,7 +86,10 @@ const Lodging = () => {
 				/>
 				</div>
 			</div>
+			</div>
+		)}
 		</div>
+				
 	);
 };
 
