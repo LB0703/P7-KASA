@@ -7,37 +7,31 @@ import Cards from "../components/Card";
 const Home = () => {
 	const [data, setData] = useState ([]);
 
-const getData =() => {
-	fetch("logements.json", {
-		headers: {
-			"Content-Type": "application/json",
-			Accept: "application/json",
-		},
-	})
+	useEffect(() => {
+		fetch("http://localhost:3000/lodgings.json", {
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+			},
+		})
 		.then(function(response) {
 			console.log(response)
 			return response.json()
 		})
-
 		.then(function (data) {
 			console.log(data)
 			setData(data);
 		})
-
 		.catch(function () {
 			console.log("error");
 		});
-};
-
-	useEffect(() => {
-		getData();
 	}, []);
 	
 	return (
 		<div>
 			<Banner />
 			<div className="card__container">
-				{  data && data.length>0 && data.map((lodging) =>
+				{ data && data.length>0 && data.map((lodging) =>
 					<Link className="card" key={`${lodging.id}`} to= {`/accomodation/${lodging.id}`}>
 						<Cards 
 							key={`lodging.id`}
