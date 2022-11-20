@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import arrowTop from "../images/arrowTop.png"
 import arrowBottom from "../images/arrowBottom.png"
 
